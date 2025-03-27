@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavGarin - Developed design</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Fondo animado con p5.js -->
+<div id="canvas-container"></div>
+
+<!-- Contenedor principal (sin scroll) -->
+<div class="app-container">
+    <!-- Barra de navegación -->
+    <nav class="nav">
+    <button data-view="home" class="nav-btn active">Inicio</button>
+    <button data-view="work" class="nav-btn">Proyectos</button>
+    <button data-view="about" class="nav-btn">Sobre mí</button>
+    <button data-view="contact" class="nav-btn">Contacto</button>
+    </nav>
+
+    <!-- Vistas -->
+    <main class="views">
+    <!-- Vista Home -->
+    <section id="home" class="view active-view">
+        <h1>Hola, soy <span class="highlight">[Javier]</span></h1>
+        <p>Diseñador / Desarrollador / Especialidad</p>
+    </section>
+
+    <!-- Vista Proyectos -->
+    <section id="work" class="view">
+        <h2>Proyectos</h2>
+        <div class="projects-grid">
+        <div class="project-card">
+            <h3>Proyecto 1</h3>
+            <p>Descripción breve.</p>
+        </div>
+        <!-- Añade más tarjetas -->
+        </div>
+    </section>
+
+    <!-- Vista Sobre Mí -->
+    <section id="about" class="view">
+        <h2>Sobre Mí</h2>
+        <div class="about-content">
+            <p>Texto sobre ti, tu experiencia y habilidades.</p>
+        </div>
+    </section>
+
+    <!-- Vista Contacto -->
+    <section id="contact" class="view">
+        <h2>Contacto</h2>
+        <a href="mailto:tu@email.com" class="btn">tu@email.com</a>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </section>
+    </main>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+<script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+<script src="js/sketch.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
